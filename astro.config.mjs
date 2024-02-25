@@ -19,7 +19,11 @@ export default defineConfig({
         },
         {
           label: "Guides",
-          autogenerate: { directory: "guides" },
+          items: [
+            { label: "Project", link: "/guides/project" },
+            { label: "Sprite", link: "/guides/sprite" },
+            { label: "Blocks", link: "/guides/blocks" },
+          ],
         },
         {
           label: "Reference",
