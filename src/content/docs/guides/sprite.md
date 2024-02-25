@@ -14,9 +14,14 @@ Generally, sprites should be put into their own function. This is for two reason
 
 That said, if you do think it makes more sense to put the sprite directly into the argument of another function, you are of course free to do so. An exception of this is when you are writing an extension for Mröw and have a function that just adds a sprite, for example.
 
-```rs
+```rs del={2-6} ins={8-14}
 // src/my_project.gleam
-// This is preferred:
+project.project()
+|> project.add_sprite(
+  sprite.sprite("Sprite1")
+  |> ...,
+)
+
 project.project()
 |> project.add_sprite(sprite())
 
@@ -24,13 +29,6 @@ fn sprite() {
   sprite.sprite("Sprite1")
   |> ...
 }
-
-// Over this:
-project.project()
-|> project.add_sprite(
-  sprite.sprite("Sprite1")
-  |> ...,
-)
 ```
 
 ## Creating a sprite
