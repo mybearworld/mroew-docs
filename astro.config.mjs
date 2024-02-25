@@ -6,7 +6,6 @@ export default defineConfig({
   integrations: [
     starlight({
       lastUpdated: true,
-      customCss: ["/src/style.css"],
       title: "Mröw",
       social: {
         github: "https://github.com/withastro/starlight",
