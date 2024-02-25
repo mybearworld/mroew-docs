@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
+      lastUpdated: true,
       customCss: ["/src/style.css"],
       title: "Mröw",
       social: {
