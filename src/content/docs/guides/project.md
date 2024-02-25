@@ -24,9 +24,8 @@ fn stage() {
 
 By default, the only sprite the project has is the stage. If you want to add an additional sprite to your project, you can use the `add_sprite` function.
 
-```rs
+```rs {3,9-12}
 // src/my_project.gleam
-
 project.project(stage())
 |> project.add_sprite(sprite())
 
@@ -48,7 +47,7 @@ After the project is finished, you probably want to export it as an .sb3 file in
 Scratch uses the file name of the .sb3 file to generate a project title. If you set your file name to `Project title.sb3`, your title won't get overwritten by Scratch.
 :::
 
-```rs
+```rs {3}
 // src/my_project.gleam
 project.project(stage())
 |> project.export("project.sb3")

@@ -37,7 +37,8 @@ project.project()
 
 You can create a sprite using the `sprite` function. This function gets in the name of the sprite to use. If the sprite is used as the stage, the name is ignored. For clarity, you can pass in `Stage`.
 
-```rs
+```rs {3}
+// src/my_project.gleam
 fn sprite() {
   sprite.sprite("Sprite1")
 }
@@ -47,7 +48,8 @@ fn sprite() {
 
 Costumes can be added using the `add_costume` function. It takes in the costume name, the costume path (relative to the current working directory), and the dimensions of the costume. It's recommended to put the assets into their own `/assets/` folder.
 
-```rs
+```rs {4}
+// src/my_project.gleam
 fn sprite() {
   sprite.sprite()
   |> sprite.add_costume("Blob", "./assets/blob.svg", 120, 150)
@@ -58,7 +60,8 @@ fn sprite() {
 
 Sounds can be added using the `add_sound` function. It takes in the sound name and path.
 
-```rs
+```rs {4}
+// src/my_project.gleam
 fn sprite() {
   sprite.sprite()
   |> sprite.add_sound("Boing", "./assets/boing.wav")
@@ -69,7 +72,8 @@ fn sprite() {
 
 If you want to use a variable that isn't shared by the whole project, you can use the `variable` function. It gets in a variable name. When that variable name is then used within this sprite, it will be local, not global.
 
-```rs
+```rs {4}
+// src/my_project.gleam
 fn sprite() {
   sprite.sprite()
   |> sprite.variable("my local variable")
@@ -84,7 +88,8 @@ A script can be added to the sprite with the `blocks` function. It gets in a set
 When multiple scripts are added, they're going to appear over each other, because Mröw can't know how wide or tall your scripts are going to be. You can use the Clean Up button in the right-click menu on Scratch to make the scripts appear properly.
 :::
 
-```rs
+```rs {5-8}
+// src/my_project.gleam
 fn sprite() {
   sprite.sprite()
   |> sprite.add_costume("Blob", "./assets/blob.svg", 120, 150)

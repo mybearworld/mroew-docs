@@ -28,20 +28,20 @@ git submodule add https://github.com/mybearworld/mroew.git
 
 Adding Mröw as a submodule like this embeds Mröw into your project as a folder. Git won't upload that folder verbatim, it'll just track which commit of the original Mröw repo the folder is on. To any other tools though, including Gleam, it's just a normal folder. Add the following line to your dependencies in `gleam.toml`:
 
-```diff
+```toml ins={4}
 # gleam.toml
 [dependencies]
 gleam_stdlib = "~> 0.34 or ~> 1.0"
-+mroew = { path = "./mroew" }
+mroew = { path = "./mroew" }
 ```
 
 Also in `gleam.toml`, set the target to JavaScript:
 
-```diff
+```toml ins={4}
 # gleam.toml
 name = "my_project"
 version = "1.0.0"
-+target = "javascript"
+target = "javascript"
 ```
 
 And you're good to go! You can add the basic Mröw structure to the `src/my_project.gleam` file to try it out:
@@ -70,13 +70,13 @@ gleam run
 
 And if all goes well, you should have a working Scratch project at `project.sb3`! You probably don't want to commit it, though, so add it to your `.gitignore`:
 
-```diff
+```ignore ins={6}
 # .gitignore
 *.beam
 *.ez
 /build
 erl_crash.dump
-+*.sb3
+*.sb3
 ```
 
 Congrats! You have just created a Mröw project. There should be links to further documentation here, but none currently exists.
