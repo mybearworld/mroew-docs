@@ -46,7 +46,7 @@ version = "1.0.0"
 
 And you're good to go! You can add the basic Mröw structure to the `src/my_project.gleam` file to try it out:
 
-```gleam
+```rs
 // src/my_project.gleam
 import mroew/project
 import mroew/sprite
