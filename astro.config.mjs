@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
+      customCss: ["/src/style.css"],
       title: "Mröw",
       social: {
         github: "https://github.com/withastro/starlight",
@@ -27,7 +28,7 @@ export default defineConfig({
         },
         {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          link: "https://mybearworld.github.io/mroew",
         },
       ],
     }),
