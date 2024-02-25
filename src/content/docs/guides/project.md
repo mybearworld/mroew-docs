@@ -48,8 +48,6 @@ After the project is finished, you probably want to export it as an .sb3 file in
 Scratch uses the file name of the .sb3 file to generate a project title. If you set your file name to `Project title.sb3`, your title won't get overwritten by Scratch.
 :::
 
-> **Tip**
-
 ```rs
 // src/my_project.gleam
 project.project(stage())
