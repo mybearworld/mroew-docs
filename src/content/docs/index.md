@@ -6,7 +6,7 @@ hero:
   tagline: Write Scratch projects in Gleam. Simple, composable, extensible.
   actions:
     - text: Getting Started
-      link: /guides/example/
+      link: /getting-started/getting-started/
       icon: right-arrow
       variant: primary
     - text: GitHub
