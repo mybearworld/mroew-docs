@@ -16,7 +16,10 @@ export default defineConfig({
       sidebar: [
         {
           label: "About",
-          autogenerate: { directory: "about" },
+          items: [
+            { label: "Getting started", link: "/about/getting-started" },
+            { label: "To do", link: "/about/to-do" },
+          ],
         },
         {
           label: "Guides",
