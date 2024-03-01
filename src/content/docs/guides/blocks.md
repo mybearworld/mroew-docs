@@ -31,7 +31,7 @@ sprite.sprite()
 )
 ```
 
-Some blocks also take in [operators](../operators.md) as parameters.
+Some blocks also take in [operators](../operators) as parameters.
 
 ## Adding C-blocks to a script
 

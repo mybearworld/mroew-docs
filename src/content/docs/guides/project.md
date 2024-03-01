@@ -7,7 +7,7 @@ description: Explanation of the concept and type of Project in Mröw.
 
 ## Creating a project
 
-To create a project, use the `project` function. It gets in the stage as a parameter. The stage is just a simple [sprite](./sprite.md), so you can create a sprite and pass it in here. The name of the sprite gets ignored, and is always set to "Stage".
+To create a project, use the `project` function. It gets in the stage as a parameter. The stage is just a simple [sprite](./sprite), so you can create a sprite and pass it in here. The name of the sprite gets ignored, and is always set to "Stage".
 
 ```rs
 // src/my_project.gleam

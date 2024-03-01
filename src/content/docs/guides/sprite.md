@@ -3,7 +3,7 @@ title: Sprite
 description: Explanation of the concept and type of Sprite in Mröw.
 ---
 
-Sprites are the objects making up a [project](./project.md). Sprites have costumes, sounds, and most importantly blocks, which control their behavior. The built-in functions related to projects are in the `mroew/sprite` module.
+Sprites are the objects making up a [project](./project). Sprites have costumes, sounds, and most importantly blocks, which control their behavior. The built-in functions related to projects are in the `mroew/sprite` module.
 
 ## Style
 
@@ -80,7 +80,7 @@ fn sprite() {
 
 ## Adding a script
 
-A script can be added to the sprite with the `blocks` function. It gets in a set of [blocks](./blocks.md). For better readability, these should be after the properties above.
+A script can be added to the sprite with the `blocks` function. It gets in a set of [blocks](./blocks). For better readability, these should be after the properties above.
 
 :::tip
 When multiple scripts are added, they're going to appear over each other, because Mröw can't know how wide or tall your scripts are going to be. You can use the Clean Up button in the right-click menu on Scratch to make the scripts appear properly.
