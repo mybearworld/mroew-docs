@@ -24,6 +24,7 @@ export default defineConfig({
             { label: "Project", link: "/guides/project" },
             { label: "Sprite", link: "/guides/sprite" },
             { label: "Blocks", link: "/guides/blocks" },
+            { label: "Operators", link: "/guides/operators" },
           ],
         },
         {
