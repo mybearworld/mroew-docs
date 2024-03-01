@@ -1,2 +1,4 @@
 **/*.md linguist-detectable
 docs/* -linguist-documentation
+astro.config.mjs -linguist-detectable
+src/content/config.ts -linguist-detectable
