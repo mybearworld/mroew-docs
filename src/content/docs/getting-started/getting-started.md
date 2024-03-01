@@ -5,6 +5,10 @@ description: Instructions on creating a project with Mröw.
 
 Mröw is a library to make Scratch projects for Gleam. This guide will tell you how to get started with a Gleam project using Mröw.
 
+:::caution
+Mröw is currently not stable. In order to add new features, there might end up being breaking changes.
+:::
+
 ## Creating the project
 
 Make sure you have Gleam and Node.js installed. Then, go to your console and create a Gleam project:
