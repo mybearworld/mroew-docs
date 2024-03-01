@@ -3,6 +3,8 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://mybearworld.github.io/mroew-docs",
+  base: "/mroew-docs/",
   integrations: [
     starlight({
       lastUpdated: true,
