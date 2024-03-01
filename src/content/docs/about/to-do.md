@@ -10,6 +10,7 @@ Ideally, this page will be deletable in the future :)
 ## Mröw
 
 - **Custom block support**. You can just make a function for now, but you can't pass in runtime arguments or run without screen refresh.
+- **Proper documentation comments**. The [HexDocs reference](https://mybearworld.github.io/mroew) is currently there, but doesn't provide much insight because thare are no comments.
 
 ## Docs
 
